@@ -1,5 +1,6 @@
 import { Welcome } from '../components/Welcome/Welcome';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
+import { FooterLinks } from '../components/Footer/FooterLink';
 
 export default function HomePage() {
   return (
@@ -7,6 +8,7 @@ export default function HomePage() {
     <>
       <Welcome />
       <ColorSchemeToggle />
+      <FooterLinks data={[]} />
     </>
   );
 }
