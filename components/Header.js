@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import MyLogo from "../public/koji.png";
-import { HiSearch, HiUser } from "react-icons/hi";
+import { HiSearch, HiUser, HiOutlineChevronDown } from "react-icons/hi";
 
 function Header() {
   return (
@@ -25,9 +25,12 @@ function Header() {
         <HiSearch className=" bg-red-500 text-white rounded-full h-8 w-8 p-2 cursor-pointer" />
       </div>
       {/*Right side */}
-      <div className=" flex items-center p-5 place-content-end space-x-4">
-        <p> Become a host</p>
-        <HiUser className=" bg-blue-500 text-white rounded-full h-8 w-8 p-2 cursor-pointer" />
+      <div className=" flex items-center p-5 place-content-end space-x-10">
+        <p className=" cursor-pointer"> Become a host</p>
+        <div className="flex items-center border-2 p-2 space-x-6 rounded-full cursor-pointer">
+          <HiOutlineChevronDown />
+          <HiUser className=" bg-blue-500 text-white rounded-full h-8 w-8 p-2" />
+        </div>
       </div>
     </header>
   );
