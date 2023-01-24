@@ -1,0 +1,26 @@
+[
+  {
+    "roomID": "1",
+    "img": "public/room1.jpg",
+    "location": "Senayan, Jakarta Selatan",
+    "distance": "03 km"
+  },
+  {
+    "roomID": "2",
+    "img": "public/room2.jpg",
+    "location": "Kuningan, Jakarta Pusat",
+    "distance": "10 km"
+  },
+  {
+    "roomID": "3",
+    "img": "public/room3.jpg",
+    "location": "Kemang, Jakarta Selatan",
+    "distance": "05 km"
+  },
+  {
+    "roomID": "4",
+    "img": "public/room4.jpg",
+    "location": "BlokM, Jakarta Selatan",
+    "distance": "3 km"
+  }
+]
