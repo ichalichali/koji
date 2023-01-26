@@ -1,7 +1,7 @@
 import React from "react";
 
-function cardS() {
+function SmallCard(id, img, location, distance) {
   return <div>cardS</div>;
 }
 
-export default cardS;
+export default SmallCard;
