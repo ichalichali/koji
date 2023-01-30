@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Banner from "../components/banner";
 import SmallCard from "../components/cardS";
+import RoomSearch from "../components/search";
 
 export default function Home({ exploreData }) {
   return (
@@ -10,10 +11,9 @@ export default function Home({ exploreData }) {
       <Head>
         <title>KOJI</title>
       </Head>
-
       <Header />
+      <RoomSearch />
       <Banner />
-
       <main>
         <section className="p-10">
           <h2 className=" text-4xl font-bold py-10">Explore Near By</h2>
