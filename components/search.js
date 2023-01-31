@@ -1,44 +1,138 @@
-import React, { Component } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import { FaSlidersH, FaUserAlt } from "react-icons/fa";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  FaMale,
+  FaFemale,
+  FaRestroom,
+  FaPeopleArrows,
+  FaBus,
+  FaTrain,
+  FaSchool,
+  FaCarAlt,
+  FaMotorcycle,
+  FaPizzaSlice,
+  FaSnowflake,
+  FaSun,
+  FaBath,
+  FaWifi,
+  FaSearchLocation,
+  FaSlidersH,
+  FaSwimmingPool,
+} from "react-icons/fa";
 
-export default class RoomSearch extends Component {
-  render() {
-    return (
-      <div className="p-10 h-50">
-        <div>
-          <Carousel>
-            <div>
-              <img src="/user1.png" alt="image1" />
-              <p className="legend">Image 1</p>
-            </div>
-            <div>
-              <img src="/user2.png" alt="image2" />
-              <p className="legend">Image 2</p>
-            </div>
-            <div>
-              <img src="/user3.png" alt="image3" />
-              <p className="legend">Image 3</p>
-            </div>
-            <div>
-              <img src="/user1.png" alt="image4" />
-              <p className="legend">Image 4</p>
-            </div>
-            <div>
-              <img src="/user2.png" alt="image5" />
-              <p className="legend">Image 5</p>
-            </div>
-          </Carousel>
-        </div>
-        <div className=" flex items-center p-5 place-content-end space-x-10">
-          <p className=" cursor-pointer"> Become a host</p>
-          <div className="flex items-center border-2 p-2 space-x-6 rounded-full cursor-pointer">
-            <FaSlidersH />
-            <FaUserAlt className=" bg-blue-500 text-white rounded-full h-8 w-8 p-2" />
-          </div>
+// Import Swiper styles
+import "swiper/css";
+
+export default () => {
+  return (
+    <div className=" grid grid-cols-6 align-middle p-5">
+      <div className=" items-center col-span-5 cursor-pointer my-5">
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={10}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide>
+            <p className=" grid justify-items-center text-center">
+              <FaMale className="  h-6 w-6" />
+              Male
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className=" grid justify-items-center text-center">
+              <FaFemale className="  h-6 w-6" />
+              Female
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className=" grid justify-items-center text-center">
+              <FaRestroom className="  h-6 w-6" />
+              Mix
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className=" grid justify-items-center text-center">
+              <FaPeopleArrows className="  h-6 w-6" />
+              Couple
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className=" grid justify-items-center text-center">
+              <FaCarAlt className="  h-6 w-6" />
+              Car Park
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className=" grid justify-items-center text-center">
+              <FaMotorcycle className="  h-6 w-6" />
+              Motorbike Park
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className=" grid justify-items-center text-center">
+              <FaBus className="  h-6 w-6" />
+              Bus Stop
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className=" grid justify-items-center text-center">
+              <FaTrain className="  h-6 w-6" />
+              MRT Stop
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className=" grid justify-items-center text-center">
+              <FaPizzaSlice className="  h-6 w-6" />
+              Nearby Food
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className=" grid justify-items-center text-center">
+              <FaSchool className="  h-6 w-6" />
+              Nearby Campus
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className=" grid justify-items-center text-center">
+              <FaBath className="  h-6 w-6" />
+              Bathroom inside
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className=" grid justify-items-center text-center">
+              <FaSnowflake className="  h-6 w-6" />
+              Air Conditioner
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className=" grid justify-items-center text-center">
+              <FaSun className="  h-6 w-6" />
+              Water Heater
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className=" grid justify-items-center text-center">
+              <FaWifi className="  h-6 w-6" />
+              Wifi
+            </p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <p className=" grid justify-items-center text-center">
+              <FaSwimmingPool className="  h-6 w-6" />
+              Swimming Pool
+            </p>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+      <div className=" flex items-center place-content-end space-x-10 col-span-1">
+        {/* right side */}
+        <p className=" cursor-pointer"> More Filter</p>
+        <div className="flex items-center p-2 space-x-6 rounded-full cursor-pointer">
+          <FaSlidersH />
+          <FaSearchLocation className="h-8 w-8 p-2" />
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
