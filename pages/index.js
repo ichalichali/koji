@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Banner from "../components/banner";
 import SmallCard from "../components/cardS";
 import RoomSearch from "../components/search";
-import CardList from "../components/cardlist";
+import InfoCard from "../components/infoCard";
 
 export default function Home({ exploreData }) {
   return (
@@ -30,7 +30,7 @@ export default function Home({ exploreData }) {
           </div>
         </section>
       </main>
-      <CardList />
+      <InfoCard />
     </div>
   );
 }
