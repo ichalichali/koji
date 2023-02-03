@@ -5,6 +5,7 @@ import Banner from "../components/banner";
 import SmallCard from "../components/cardS";
 import RoomSearch from "../components/search";
 import InfoCard from "../components/infoCard";
+import Footer from "../components/footer";
 
 export default function Home({ exploreData }) {
   return (
@@ -29,8 +30,40 @@ export default function Home({ exploreData }) {
             ))}
           </div>
         </section>
+        <section className="p-10">
+          <h2 className=" text-4xl font-bold py-10">Find yours</h2>
+          <div className="grid xl:grid-cols-4">
+            {exploreData.map(
+              ({
+                id,
+                img,
+                distance,
+                location,
+                price,
+                availability,
+                availableRoom,
+                internet,
+                AC,
+                WaterHeater,
+              }) => (
+                <InfoCard
+                  key={id}
+                  img={img}
+                  distance={distance}
+                  location={location}
+                  price={price}
+                  availability={availability}
+                  availableRoom={availableRoom}
+                  internet={internet}
+                  AC={AC}
+                  WaterHeater={WaterHeater}
+                />
+              )
+            )}
+          </div>
+        </section>
       </main>
-      <InfoCard />
+      <Footer />
     </div>
   );
 }

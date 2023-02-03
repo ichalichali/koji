@@ -1,7 +1,7 @@
 [
   {
-    "roomID": "1",
-    "img": "/user1.jpg",
+    "id": "1",
+    "img": "/room1.jpg",
     "location": "Senayan, Jakarta Selatan",
     "distance": "03 km",
     "longitude": "",
@@ -22,7 +22,7 @@
   },
   {
     "id": "2",
-    "img": "/user2.jpg",
+    "img": "/room2.jpg",
     "location": "Kuningan, Jakarta Pusat",
     "distance": "10 km",
     "longitude": "",
@@ -43,7 +43,7 @@
   },
   {
     "id": "3",
-    "img": "/user3.jpg",
+    "img": "/room3.jpg",
     "location": "Kemang, Jakarta Selatan",
     "distance": "05 km",
     "longitude": "",
@@ -64,7 +64,7 @@
   },
   {
     "id": "4",
-    "img": "/user1.jpg",
+    "img": "/room4.jpg",
     "location": "BlokM, Jakarta Selatan",
     "distance": "3 km",
     "longitude": "",
